@@ -1,0 +1,68 @@
+# Ignore node_modules and dependencies
+node_modules/
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
+
+# Ignore build artifacts
+dist/
+build/
+coverage/
+out/
+
+# Ignore environment and secrets
+.env
+.env.local
+.envrc
+*.pem
+*.key
+
+# Ignore logs and system files
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Ignore editor and OS metadata
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+.DS_Store
+Thumbs.db
+*.swp
+*.bak
+
+# Ignore generated files
+*.min.*
+*.map
+*.cache
+
+# Ignore Terraform and HashiCorp tool artifacts
+.terraform/
+.terraform.lock.hcl
+.packer_cache/
+
+# Ignore Python virtual environment and cache
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# Ignore Rust build artifacts
+target/
+Cargo.lock
+
+# Ignore Go workspaces
+go.work
+go.work.sum
+
+# Ignore Ansible-related temporary files
+*.retry
+collections/
+roles/
+
+# Ignore shell scripts & YAML (Prettier doesn't format them properly)
+*.sh
+*.yml
+*.yaml
