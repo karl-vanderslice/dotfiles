@@ -1,0 +1,121 @@
+# ---- SYSTEM & OS-SPECIFIC FILES ----
+
+# Windows system files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+.Spotlight-V100/
+.Trashes/
+.fseventsd/
+
+# Linux/Unix files
+*.swp
+*.swo
+*~
+.nfs*
+
+# KDE & GNOME
+.kde/
+.kde4/
+.gnome/
+.gnome2/
+.gconf/
+.gconfd/
+.local/share/Trash/
+
+# Synology/NAS/NFS/SMB
+@eaDir/
+.SynologyWorkingDirectory/
+
+# ---- GLOBAL TOOLS & PACKAGE MANAGERS ----
+
+# Direnv
+.envrc
+.env/
+
+# Terraform, Packer, and HashiCorp tools
+.terraform/
+.terraform.lock.hcl
+.packer_cache/
+
+# Ansible
+*.retry
+collections/
+roles/
+
+# Python global (but not project-level)
+__pycache__/
+*.pyc
+*.pyo
+pip-selfcheck.json
+.pip-cache/
+.venv/
+.env/
+
+# Node.js global
+.npm/
+.nvmrc
+.node_repl_history
+.yarnrc
+.yarn/
+
+# Rust global
+.cargo/
+target/
+rustup/
+
+# Go global
+.gopath/
+go.work
+go.work.sum
+
+# Java & JVM tools
+.gradle/
+.mvn/
+target/
+*.class
+
+# Editor-specific files (VS Code, JetBrains, Vim, etc.)
+.vscode/
+.idea/
+*.iml
+*.sublime-workspace
+*.sublime-project
+*.bak
+*.swp
+
+# Logs and temp files
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pids/
+*.pid
+*.seed
+*.state
+
+# ---- MISCELLANEOUS ----
+
+# Lock files that shouldn’t be shared globally
+*.lock
+*.log.*
+
+# Cryptographic files
+*.pem
+*.crt
+*.key
+*.der
+
+# Backup files
+*.bak
+*.orig
+*.tmp

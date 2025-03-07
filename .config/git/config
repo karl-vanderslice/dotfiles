@@ -1,0 +1,109 @@
+[user]
+        name = Karl Vanderslice
+        email = karl@karlvanderslice.com
+        signingkey = 28BAA619ED9EC044
+
+[alias]
+        br = branch
+        ch = cherry-pick
+        ci = commit
+        co = checkout
+        dft = difftool
+        dump = cat-file -p
+        gr = grep -I
+        hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+        lg = log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) %C(bold green)(%ar)%C(reset) %C(yellow)- %an%C(reset)%C(auto)%d%C(reset)%n"        "%C(white)%s%C(reset)' --all
+        lgg = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(auto)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)'
+        ls = ls-files
+        out = "log @{u}.."
+        st = status
+        tip = log -1 HEAD
+        type = cat-file -t
+        zip = archive -o latest.zip HEAD
+
+[advice]
+        detachedHead = false
+
+[apply]
+        whitespace = fix
+
+[branch]
+        sort = -committerdate
+
+[color "diff"]
+        whitespace = red reverse
+
+[column]
+        ui = auto
+
+[commit]
+        gpgsign = true
+        verbose = true
+
+[core]
+        autocrlf = input
+        excludesfile = /home/karl/.config/git/ignore
+        fsmonitor = true
+        pager = bat
+        safecrlf = true
+        untrackedCache = true
+
+[diff]
+        algorithm = histogram
+        mnemonicPrefix = true
+        renames = true
+        wsErrorHighlight = all
+	colorMoved = dimmed-zebra
+
+[fetch]
+        all = true
+        prune = true
+        pruneTags = true
+
+[format]
+        pretty = fuller
+
+[help]
+        autocorrect = prompt
+
+[init]
+        defaultBranch = main
+
+[log]
+        date = iso-local
+
+[merge]
+        conflictstyle = zdiff3
+
+[pull]
+        rebase = true
+
+[push]
+        autoSetupRemote = true
+        default = simple
+        followTags = true
+
+[rebase]
+        autoSquash = true
+        autoStash = true
+        updateRefs = true
+
+[rerere]
+        autoupdate = true
+        enabled = true
+
+[safe]
+        directory = *
+
+[tag]
+        gpgSign = true
+        sort = version:refname
+
+[tar "tar.xz"]
+        command = xz -c
+
+[tar "tar.zst"]
+        command = zstd -T0 -c
+
+[url "ssh://git@github.com/"]
+  insteadOf = https://github.com/
