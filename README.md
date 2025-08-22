@@ -7,6 +7,8 @@
 - Yubikey
 - AGE/Sops
 - SSH
+- VSCode (.vscode)
+- Tmux
 
 ## Aliases
 
