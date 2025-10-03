@@ -42,7 +42,7 @@
 
 [core]
         autocrlf = input
-        excludesfile = /home/karl/.config/git/ignore
+        excludesfile = ~/.config/git/ignore
         fsmonitor = true
         pager = bat
         safecrlf = true
@@ -67,7 +67,7 @@
         autocorrect = prompt
 
 [init]
-        defaultBranch = main
+        defaultBranch = master
 
 [log]
         date = iso-local
