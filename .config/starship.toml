@@ -1,6 +1,6 @@
 add_newline = true
 command_timeout = 200
-format = "[$directory$git_branch$git_status]($style)$character"
+format = "[$directory$git_branch$git_status]($style)$python$nix_shell$character"
 
 [character]
 error_symbol = "[✗](bold cyan)"
@@ -30,3 +30,13 @@ stashed    = ""
 staged     = ""
 renamed    = ""
 deleted    = ""
+
+[python]
+format = '[(\($virtualenv\) )]($style)'
+style = "italic cyan"
+detect_extensions = []  # Don't show python indicator for .py files
+detect_files = []      # Don't show python indicator for common python files
+
+[nix_shell]
+format = '[(nix) ]($style)'
+style = "italic cyan"
