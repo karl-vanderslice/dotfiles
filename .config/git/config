@@ -1,7 +1,7 @@
 [user]
         name = Karl Vanderslice
         email = karl@karlvanderslice.com
-        signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIEoGuNaSFgZpti6+HcZTJS95g5fVLOmATAqPfyWJ0Ekq karl@karlvanderslice.com
+	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIEoGuNaSFgZpti6+HcZTJS95g5fVLOmATAqPfyWJ0Ekq karl@karlvanderslice.com
 
 [alias]
         br = branch
@@ -37,7 +37,7 @@
         ui = auto
 
 [commit]
-        gpgsign = true
+	gpgsign = true
         verbose = true
 
 [core]
@@ -53,7 +53,7 @@
         mnemonicPrefix = true
         renames = true
         wsErrorHighlight = all
-        colorMoved = dimmed-zebra
+	colorMoved = dimmed-zebra
 
 [fetch]
         all = true
@@ -96,7 +96,7 @@
         directory = *
 
 [tag]
-        gpgSign = true
+	gpgSign = true
         sort = version:refname
 
 [tar "tar.xz"]
@@ -108,4 +108,4 @@
 [url "ssh://git@github.com/"]
   insteadOf = https://github.com/
 [gpg]
-        format = ssh
+	format = ssh
